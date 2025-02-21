@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia da Dorameira - Encontre Seu Próximo Dorama!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #E1B288;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #AA7E8D;
+            color: white;
+            padding: 50px 20px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+        .cta {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: pulse 1.5s infinite;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .cta:hover {
+            background: #218838;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        section {
+            padding: 50px 20px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            background: white;
+        }
+        .guarantee {
+            background: #F8F8F8;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            font-size: 0.9em;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .cover-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📖 Nunca Mais Fique Sem Saber Qual Dorama Assistir! 🎬</h1>
+        <h2>O Guia da Dorameira traz +50 indicações de doramas organizados por categorias para você encontrar seu próximo vício sem perder tempo!</h2>
+        <img src="CAPA EBOOK.jpg" alt="Capa do Guia da Dorameira" class="cover-image">
+        <a href="https://pay.kiwify.com.br/NZHluog" class="cta">🔥 QUERO O MEU AGORA! 🔥</a>
+    </header>
+
+    <section class="benefits">
+        <h2>📌 O que você vai encontrar no Guia?</h2>
+        <ul>
+            <li>✔ +50 indicações de doramas, separadas por categorias:</li>
+            <ul>
+                <li>💕 Romance apaixonante</li>
+                <li>🔥 Ação e suspense de tirar o fôlego</li>
+                <li>✨ Fantasia para te transportar para outro mundo</li>
+                <li>💼💖 CEOs irresistíveis e romances viciantes</li>
+                <li>😭 Dramas para chorar com lencinho na mão</li>
+                <li>🎭 Mini dramas para maratonar rapidinho</li>
+            </ul>
+            <li>✔ 🎶 Bônus exclusivo: Uma playlist com +3 horas das melhores OSTs de doramas!</li>
+            <li>✔ 📩 Acesso imediato: Após a compra, você recebe login e senha no seu e-mail para baixar o eBook na hora!</li>
+        </ul>
+    </section>
+
+    <section class="cta-section" id="compra">
+        <h2>📲 Garanta seu Guia agora e tenha sempre um dorama incrível para assistir!</h2>
+        <a href="https://pay.kiwify.com.br/NZHluog" class="cta">🔥 BAIXAR AGORA! 🔥</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>🌟 O que quem já comprou está dizendo:</h2>
+        <p>🗣️ “Esse guia salvou minhas maratonas! Nunca mais fiquei sem saber o que assistir!” – Ana Souza</p>
+        <p>🗣️ “Além das indicações incríveis, a playlist é um presente maravilhoso!” – Juliana Martins</p>
+    </section>
+
+    <section class="guarantee">
+        <h2>✅ Garantia de Satisfação</h2>
+        <p>Se você ama doramas, esse guia é feito para você! 📌 Aproveite agora e evite perder tempo procurando o que assistir!</p>
+        <a href="https://pay.kiwify.com.br/NZHluog" class="cta">🔥 BAIXAR AGORA! 🔥</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Guia da Dorameira - Todos os direitos reservados.</p>
+    </footer>
+    <audio id="background-music" loop>
+        <source src="música background.mp4" type="audio/mp4">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <button id="play-music" style="position: fixed; bottom: 20px; right: 20px; background: #28a745; color: white; border: none; padding: 10px 20px; font-size: 1em; border-radius: 12px; cursor: pointer;">🎵 Tocar Música</button>
+    <script>
+        document.getElementById('play-music').addEventListener('click', function() {
+            var audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play();
+                this.textContent = '⏸️ Pausar Música';
+            } else {
+                audio.pause();
+                this.textContent = '🎵 Tocar Música';
+            }
+        });
+    </script>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('CUR6HNRC77UA8JMIT2KG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '590670810599665');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=590670810599665&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</body>
+</html>
